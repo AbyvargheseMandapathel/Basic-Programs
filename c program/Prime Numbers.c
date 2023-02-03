@@ -19,9 +19,10 @@ int main() {
         printf("Number is neither prime not nor");
     }
     else if (flag == 0) {
-        printf("Number is  prime");
+        printf("%d is   prime", number);
     }
     else {
-        printf("Number is not  prime");
+        printf("%d is not   prime", number);
     }
     }
+
