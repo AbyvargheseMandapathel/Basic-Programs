@@ -1,0 +1,22 @@
+// Fibonacci series up till a given number:
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int next_term , first_term, second_term , limit;
+    first_term = 0;
+    second_term = 1;
+    
+    printf("enter the limit");
+    scanf("%d" , &limit);
+    printf("%d\n%d\n", first_term,second_term);
+        next_term = first_term + second_term;
+        while ( next_term <= limit) {
+            printf("%d \n",next_term);
+            first_term = second_term;
+            second_term = next_term;
+            next_term = first_term + second_term;
+        }
+    
+    return 0;
+}
